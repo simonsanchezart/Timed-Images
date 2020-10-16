@@ -7,7 +7,6 @@ from random import choice
 from time import sleep, time
 from tkinter import *
 from PIL import Image, ImageTk
-from enum import Enum
 
 cwd = Path.cwd()
 fileDirectory = os.path.dirname(__file__)
