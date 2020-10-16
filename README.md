@@ -6,6 +6,7 @@
 1. [**Usage**](#usage)
 1. [**Modes**](#modes)
 1. [**Class Creation**](#class-creation)
+***
 
 ### Purpose
 The main purpose of **Timed Images** is to provide a simple solution for iterative practice.
