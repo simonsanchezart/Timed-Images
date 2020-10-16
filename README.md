@@ -17,7 +17,6 @@ The main purpose of **Timed Images** is to provide a simple solution for iterati
 
 
 ## Usage
-***
 1. Open **cmd**
 2. Navigate to a folder with images
 3. Run *'timedImages'*
@@ -29,14 +28,12 @@ Alternatively:
 3. Run *'timedImages'*
 
 ## Features
-***
 - Quick access from command line
 - Recursive search
 - Always on top (with possibility of minimization)
 - Class mode with custom sessions
 
 ## Modes
-***
 ### Class Mode
 Classes consist of a series of previously defined sets of images. For example, a class could be:
 
