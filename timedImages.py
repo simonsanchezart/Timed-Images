@@ -45,7 +45,7 @@ def UpdateTimer():
     sessionTimeValue = max(0, sessionTimeValue)
 
     if useClass == "yes":
-        timerLabel.config(text=f"{int(currentTime)} - {round(sessionTimeValue / 60, 2)} - {subsessionCounter + 1}/{currentSubsessionValue}")
+        timerLabel.config(text=f"{int(currentTime)} - {round(sessionTimeValue / 60, 2)} - {subsessionCounter}/{currentSubsessionValue}")
     else:
         timerLabel.config(text=f"{int(currentTime)} - {round(sessionTimeValue / 60, 2)} - {subsessionCounter}")
 

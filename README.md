@@ -1,5 +1,12 @@
 # Timed Images
 
+## Table of Contents
+1. [**Purpose**](#purpose)
+1. [**Installation**](#installation)
+1. [**Usage**](#usage)
+1. [**Modes**](#modes)
+1. [**Class Creation**](#class-creation)
+
 ### Purpose
 The main purpose of **Timed Images** is to provide a simple solution for iterative practice.
 
@@ -44,9 +51,29 @@ Classes consist of a series of previously defined sets of images. For example, a
 In sequence.
 
 Classes are defined in the **classes.json** file, where you can create your own.
+***
 
 ### Simple Mode
 In this mode you define the time you want to practice in this session, then you define how much time you want per image.
 
 All images will have the same time.
 
+## Class Creation
+Classes are defined as **.json** objects, you can create your own classes in the **classes.json** file.
+
+        // Title shown in class list
+        "One Hour Class": 
+        {
+            // 10 images of 30 seconds
+            "0.5": 10,
+            // Followed by 5 images of one minute
+            "1": 5,
+            // Followed by 2 images of five minutes
+            "5": 2,
+            // Followed by 1 image of 10 minutes
+            "10": 1,
+            // Followed by 1 image of 30 minutes
+            "30": 1
+        }
+
+You can define as many classes as you wish.
