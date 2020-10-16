@@ -19,7 +19,7 @@ The main purpose of **Timed Images** is to provide a simple solution for iterati
 - [**PyInputPlus**](https://pypi.org/project/PyInputPlus/) (Run *'pip install PyInputPlus'* from **cmd**)
 - [**Pillow**](https://pypi.org/project/Pillow/) (Run *'pip install Pillow'* from **cmd**)
 ***
-1. Download **TimedImagez.zip**
+1. Download **TimedImages.zip**
 2. Extract the contents to a folder
 3. Add that folder to **%PATH%**
 
