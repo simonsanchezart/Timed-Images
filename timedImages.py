@@ -66,6 +66,30 @@ def SetCurrentImageTime():
 
     timePerImage = float(currentSubsessionKey)
 
+def GetRandomImage():
+    try:
+        randomImage = choice(allImages)
+    except IndexError:
+        print("""
+        *******************************
+        There are no more unique images
+        *******************************""")
+        exit()
+    
+    if allowRepeated == "no":
+      allImages.remove(randomImage)
+
+    try:
+        img = Image.open(randomImage)
+    except OSError:
+        img = GetRandomImage()
+
+    try:
+        img = ResizeImage(img)
+    except OSError:
+        img = GetRandomImage()
+
+    return img
 
 def ResetTimer():
     global currentTime
@@ -81,20 +105,7 @@ def UpdateImage():
         *******************************""")
         exit()
         
-    try:
-        randomImage = choice(allImages)
-    except IndexError:
-        print("""
-        *******************************
-        There are no more unique images
-        *******************************""")
-        exit()
-    
-    if allowRepeated == "no":
-      allImages.remove(randomImage)
-
-    img = Image.open(randomImage)
-    img = ResizeImage(img)
+    img = GetRandomImage()
     img = ImageTk.PhotoImage(img)
     subsessionCounter += 1
 
