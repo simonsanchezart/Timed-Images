@@ -17,6 +17,7 @@ The main purpose of **Timed Images** is to provide a simple solution for iterati
 ### Requirements
 - [**Python**](https://www.python.org/) (3.7+) ([**In PATH**](https://www.google.com/search?q=how%20to%20add%20python%20to%20path))
 - [**PyInputPlus**](https://pypi.org/project/PyInputPlus/) (Run *'pip install PyInputPlus'* from **cmd**)
+        . If you are having troubles installing PyInputPlus, run *'pip install wheel'* before attempting to install PyInputPlus
 - [**Pillow**](https://pypi.org/project/Pillow/) (Run *'pip install Pillow'* from **cmd**)
 ***
 1. Download [**TimedImages.zip**](https://github.com/simonsanchezart/Timed-Images/raw/master/TimedImages.zip)
