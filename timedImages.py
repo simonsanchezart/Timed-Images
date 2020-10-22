@@ -107,13 +107,13 @@ def UpdateImage():
         
     img = GetRandomImage()
     img = ImageTk.PhotoImage(img)
-    subsessionCounter += 1
 
     if useClass == "yes":
         SetCurrentImageTime()
 
     ResetTimer()
     imageLabel.config(image=img)
+    subsessionCounter += 1
 
     imageLabel.photo = img
     imageLabel.pack(fill=BOTH, expand=1)
@@ -123,6 +123,8 @@ def UpdateImage():
 
 startTime = 0
 def ImageViewer():
+    sleep(3)
+
     global startTime
     startTime = time()
     try:
